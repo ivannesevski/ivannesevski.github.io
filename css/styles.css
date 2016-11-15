@@ -1,0 +1,144 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	cursor: default;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+body {
+  display: table;
+  color: white;
+  background: url(../resources/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+  font-family: 'Raleway', sans-seriff;
+}
+
+.main {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.main .intro {
+  background: rgba(50,50,90,0.2);
+  color: #EEECEC;
+}
+
+.intro .name {
+  font-family: 'Roboto Condensed', sans-seriff;
+  font-size: 80px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.intro .tags {
+  font-size: 15px;
+}
+
+.main .content {
+  color: #EEECEC;
+  margin-top: 10px;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.content .resume-btn,
+.content .about-btn,
+.content .contact-btn {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: rgba(90,50,50,0.2);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  transition: background .2s ease-in-out;
+}
+
+.resume-btn .resume-icon,
+.resume-btn .fake-icon {
+  display: none;
+  font-size: 35px;
+}
+
+.resume-btn:link,
+.resume-btn:visited {
+  color: #EEECEC;
+  text-decoration: none;
+}
+
+.resume-btn:hover,
+.resume-btn:active {
+  background: rgba(208,208,208,0.5);
+}
+
+.resume-btn:hover .resume-icon,
+.resume-btn:hover .fake-icon {
+  display: inline;
+}
+
+.resume-btn:hover .fake-icon {
+  visibility: hidden;
+}
+
+.content .about-content,
+.content .contact-content {
+  padding: 5px;
+  background: rgba(90,50,50,0.5);
+  text-transform: none;
+  font-size: 15px;
+}
+
+.email,
+.linkedin,
+.github{
+  padding: 5px;
+  color: #EEECEC;
+}
+
+.email:link,
+.linkedin:link,
+.github:link,
+.email:visited,
+.linkedin:visited,
+.github:visited {
+  color: #EEECEC;
+  text-decoration: none;
+}
+
+.email:hover,
+.email:active {
+  text-decoration: none;
+  color: #FF7758;
+}
+
+.linkedin:hover,
+.linkedin:active {
+  text-decoration: none;
+  color: #528FFF;
+}
+
+.github:hover,
+.github:active {
+  text-decoration: none;
+  color: #48C860;
+}
+
+.seperator {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 7px;
+}
+
+.no-padding {
+  padding-left: 0px;
+  padding-right: 0px;
+}
