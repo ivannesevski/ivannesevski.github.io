@@ -11,6 +11,7 @@ function showHideContent(event) {
   $(upSel).toggle();
   
   if ($(upSel).is(':hidden')) {
+    $(downSel).show();
     $(btnSel).hover(
       function() {
         $(btnSel).css("background", "rgba(208,208,208,0.5)");
@@ -47,25 +48,25 @@ $(document).ready(function() {
   $('.contact-down').hide();
 
   $('.about-btn').hover(
-      function() {
-        $('.about-btn').css("background", "rgba(208,208,208,0.5)");
-        $('.about-down').show();
-      }, 
-      function() {
-        $('.about-btn').css("background", "rgba(90,50,50,0.2)");
-        $('.about-down').hide();
-      }
+    function() {
+      $('.about-btn').css("background", "rgba(208,208,208,0.5)");
+      $('.about-down').show();
+    }, 
+    function() {
+      $('.about-btn').css("background", "rgba(90,50,50,0.2)");
+      $('.about-down').hide();
+    }
   );
   
   $('.contact-btn').hover(
-      function() {
-        $('.contact-btn').css("background", "rgba(208,208,208,0.5)");
-        $('.contact-down').show();
-      }, 
-      function() {
-        $('.contact-btn').css("background", "rgba(90,50,50,0.2)");
-        $('.contact-down').hide();
-      }
+    function() {
+      $('.contact-btn').css("background", "rgba(208,208,208,0.5)");
+      $('.contact-down').show();
+    }, 
+    function() {
+      $('.contact-btn').css("background", "rgba(90,50,50,0.2)");
+      $('.contact-down').hide();
+    }
   );
     
   $('.about-btn').click({selector: '.about-'}, showHideContent);

@@ -75,31 +75,30 @@ body {
   text-decoration: none;
 }
 
-.resume-btn:hover,
-.resume-btn:active {
+.resume-btn:hover {
   background: rgba(208,208,208,0.5);
 }
 
-.resume-btn:hover .resume-icon,
-.resume-btn:hover .fake-icon {
+.resume-btn:hover .resume-icon {
   display: inline;
 }
 
 .resume-btn:hover .fake-icon {
+  display: inline;
   visibility: hidden;
 }
 
 .content .about-content,
 .content .contact-content {
   padding: 5px;
-  background: rgba(90,50,50,0.5);
+  background: rgba(90,50,50,0.7);
   text-transform: none;
   font-size: 15px;
 }
 
-.email,
-.linkedin,
-.github{
+.contact-content .email,
+.contact-content .linkedin,
+.contact-content .github{
   padding: 5px;
   color: #EEECEC;
 }
@@ -132,7 +131,7 @@ body {
   color: #48C860;
 }
 
-.seperator {
+.separator {
   display: table-cell;
   vertical-align: middle;
   font-size: 7px;
