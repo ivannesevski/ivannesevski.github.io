@@ -141,3 +141,13 @@ body {
   padding-left: 0px;
   padding-right: 0px;
 }
+
+@media (max-width: 992px) {
+  .content .col-md-4 {
+    margin-bottom: 5px;
+  }
+  
+  .content .first {
+    margin-top: 10px;
+  }
+}

@@ -9,9 +9,9 @@ function showHideContent(event) {
   
   $(contentSel).slideToggle("fast");
   $(upSel).toggle();
+  $(downSel).toggle();
   
   if ($(upSel).is(':hidden')) {
-    $(downSel).show();
     $(btnSel).hover(
       function() {
         $(btnSel).css("background", "rgba(208,208,208,0.5)");
@@ -24,7 +24,6 @@ function showHideContent(event) {
     );
   }
   else {
-    $(downSel).hide();
     $(btnSel).hover(
       function() {
         $(btnSel).css("background", "rgba(208,208,208,0.5)");
