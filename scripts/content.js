@@ -39,6 +39,8 @@ function showHideContent(event) {
 }
 
 $(document).ready(function() {
+  $("html, body").css({height: $(window).height()});
+  
   $('.about-content').hide();
   $('.contact-content').hide();
   $('.about-up').hide();

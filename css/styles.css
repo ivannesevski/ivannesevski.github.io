@@ -18,7 +18,7 @@ body {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-  font-family: 'Raleway', sans-seriff;
+  font-family: 'Raleway', Helvetica, Arial, sans-seriff;
 }
 
 .main {
@@ -28,12 +28,12 @@ body {
 }
 
 .main .intro {
-  background: rgba(50,50,90,0.2);
+  background: rgba(50,50,85,0.2);
   color: #EEECEC;
 }
 
 .intro .name {
-  font-family: 'Roboto Condensed', sans-seriff;
+  font-family: 'Roboto Condensed', Helvetica, Arial, sans-seriff;
   font-size: 80px;
   font-weight: 700;
   text-transform: uppercase;
@@ -75,7 +75,8 @@ body {
   text-decoration: none;
 }
 
-.resume-btn:hover {
+.resume-btn:hover,
+.resume-btn:active {
   background: rgba(208,208,208,0.5);
 }
 
@@ -91,7 +92,7 @@ body {
 .content .about-content,
 .content .contact-content {
   padding: 5px;
-  background: rgba(90,50,50,0.7);
+  background: rgba(85,50,50,0.7);
   text-transform: none;
   font-size: 15px;
 }
