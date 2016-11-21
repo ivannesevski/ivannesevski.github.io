@@ -64,9 +64,19 @@ body {
 }
 
 .resume-btn .resume-icon,
+.about-btn .about-down,
+.contact-btn .contact-down {
+  opacity: 0;
+  transition: opacity .2s ease-in-out;
+}
+
+.resume-btn .resume-icon,
 .resume-btn .fake-icon {
-  display: none;
-  font-size: 35px;
+  font-size: 32px;
+}
+
+.resume-btn .fake-icon {
+  opacity: 0;
 }
 
 .resume-btn:link,
@@ -81,12 +91,7 @@ body {
 }
 
 .resume-btn:hover .resume-icon {
-  display: inline;
-}
-
-.resume-btn:hover .fake-icon {
-  display: inline;
-  visibility: hidden;
+  opacity: 1;
 }
 
 .content .about-content,

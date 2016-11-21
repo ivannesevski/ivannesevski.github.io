@@ -10,16 +10,17 @@ function showHideContent(event) {
   $(contentSel).slideToggle("fast");
   $(upSel).toggle();
   $(downSel).toggle();
+  $(downSel).css("opacity", "1");
   
   if ($(upSel).is(':hidden')) {
     $(btnSel).hover(
       function() {
         $(btnSel).css("background", "rgba(208,208,208,0.5)");
-        $(downSel).show();
+        $(downSel).css("opacity", "1");
       }, 
       function() {
         $(btnSel).css("background", "rgba(90,50,50,0.2)");
-        $(downSel).hide();
+        $(downSel).css("opacity", "0");
       }
     );
   }
@@ -27,11 +28,11 @@ function showHideContent(event) {
     $(btnSel).hover(
       function() {
         $(btnSel).css("background", "rgba(208,208,208,0.5)");
-        $(downSel).hide();
+        $(downSel).css("opacity", "0");
       }, 
       function() {
         $(btnSel).css("background", "rgba(90,50,50,0.2)");
-        $(downSel).hide();
+        $(downSel).css("opacity", "0");
       }
     );
   }
@@ -42,29 +43,29 @@ $(document).ready(function() {
   $('.about-content').hide();
   $('.contact-content').hide();
   $('.about-up').hide();
-  $('.about-down').hide();
   $('.contact-up').hide();
-  $('.contact-down').hide();
+  $('.about-down').show();
+  $('.contact-down').show();
 
   $('.about-btn').hover(
     function() {
       $('.about-btn').css("background", "rgba(208,208,208,0.5)");
-      $('.about-down').show();
+      $('.about-down').css("opacity", "1");
     }, 
     function() {
       $('.about-btn').css("background", "rgba(90,50,50,0.2)");
-      $('.about-down').hide();
+      $('.about-down').css("opacity", "0");
     }
   );
   
   $('.contact-btn').hover(
     function() {
       $('.contact-btn').css("background", "rgba(208,208,208,0.5)");
-      $('.contact-down').show();
+      $('.contact-down').css("opacity", "1");
     }, 
     function() {
       $('.contact-btn').css("background", "rgba(90,50,50,0.2)");
-      $('.contact-down').hide();
+      $('.contact-down').css("opacity", "0");
     }
   );
     
