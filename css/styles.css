@@ -60,14 +60,18 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
   cursor: pointer;
+  -moz-transition: background .2s ease-in-out;
+  -webkit-transition: background .2s ease-in-out;
   transition: background .2s ease-in-out;
 }
 
 .resume-btn .resume-icon,
-.about-btn .about-down,
-.contact-btn .contact-down {
+.about-btn .fa-angle-down,
+.contact-btn .fa-angle-down {
   opacity: 0;
-  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out, transform .3s linear;
+  -webkit-transition: opacity .2s ease-in-out, transform .3s linear;
+  transition: opacity .2s ease-in-out, transform .3s linear;
 }
 
 .resume-btn .resume-icon,
@@ -146,6 +150,18 @@ body {
 .no-padding {
   padding-left: 0px;
   padding-right: 0px;
+}
+
+.rotate-left {
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+.rotate-right {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 @media (max-width: 992px) {
