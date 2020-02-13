@@ -51,7 +51,7 @@ body {
 }
 
 .content .resume-btn,
-.content .about-btn,
+.content .projects-btn,
 .content .contact-btn {
   display: block;
   height: 100%;
@@ -66,7 +66,7 @@ body {
 }
 
 .resume-btn .resume-icon,
-.about-btn .fa-angle-down,
+.projects-btn .fa-angle-down,
 .contact-btn .fa-angle-down {
   opacity: 0;
   -moz-transition: opacity .2s ease-in-out, transform .3s linear;
@@ -98,7 +98,7 @@ body {
   opacity: 1;
 }
 
-.content .about-content,
+.content .projects-content,
 .content .contact-content {
   padding: 5px;
   background: rgba(85,50,50,0.7);
@@ -116,9 +116,11 @@ body {
 .email:link,
 .linkedin:link,
 .github:link,
+.project:link,
 .email:visited,
 .linkedin:visited,
-.github:visited {
+.github:visited,
+.project:visited {
   color: #EEECEC;
   text-decoration: none;
 }

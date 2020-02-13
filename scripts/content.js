@@ -43,19 +43,19 @@ function showHideContent(event) {
 }
 
 $(document).ready(function() {
-  $('.about-content').hide();
+  $('.projects-content').hide();
   $('.contact-content').hide();
 
-  $('.about-btn').hover(
+  $('.projects-btn').hover(
     function() {
-      $('.about-btn').css("background", "rgba(208,208,208,0.5)");
-      $('.about-lArrow').css("opacity", "1");
-      $('.about-rArrow').css("opacity", "1");
+      $('.projects-btn').css("background", "rgba(208,208,208,0.5)");
+      $('.projects-lArrow').css("opacity", "1");
+      $('.projects-rArrow').css("opacity", "1");
     }, 
     function() {
-      $('.about-btn').css("background", "rgba(90,50,50,0.2)");
-      $('.about-lArrow').css("opacity", "0");
-      $('.about-rArrow').css("opacity", "0");
+      $('.projects-btn').css("background", "rgba(90,50,50,0.2)");
+      $('.projects-lArrow').css("opacity", "0");
+      $('.projects-rArrow').css("opacity", "0");
     }
   );
   
@@ -72,6 +72,6 @@ $(document).ready(function() {
     }
   );
     
-  $('.about-btn').click({selector: '.about-'}, showHideContent);
+  $('.projects-btn').click({selector: '.projects-'}, showHideContent);
   $('.contact-btn').click({selector: '.contact-'}, showHideContent);
 });
