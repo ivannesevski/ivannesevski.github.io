@@ -74,8 +74,7 @@ body {
   transition: opacity .2s ease-in-out, transform .3s linear;
 }
 
-.resume-btn .resume-icon,
-.resume-btn .fake-icon {
+.resume-btn i {
   font-size: 32px;
 }
 
@@ -106,21 +105,19 @@ body {
   font-size: 15px;
 }
 
+.content .projects-content {
+    text-align: left;
+}
+
 .contact-content .email,
 .contact-content .linkedin,
-.contact-content .github{
+.contact-content .github {
   padding: 5px;
   color: #EEECEC;
 }
 
-.email:link,
-.linkedin:link,
-.github:link,
-.project:link,
-.email:visited,
-.linkedin:visited,
-.github:visited,
-.project:visited {
+a:link,
+a:visited {
   color: #EEECEC;
   text-decoration: none;
 }
