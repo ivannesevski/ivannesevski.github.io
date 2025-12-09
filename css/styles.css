@@ -66,7 +66,7 @@ body {
 }
 
 .resume-btn .resume-icon,
-.projects-btn .fa-angle-down,
+.projects-btn .projects-icon,
 .contact-btn .fa-angle-down {
   opacity: 0;
   -moz-transition: opacity .2s ease-in-out, transform .3s linear;
@@ -74,39 +74,41 @@ body {
   transition: opacity .2s ease-in-out, transform .3s linear;
 }
 
-.resume-btn i {
+.resume-btn i
+.projects-btn i {
   font-size: 32px;
 }
 
-.resume-btn .fake-icon {
+.resume-btn .fake-icon
+.projects-btn .fake-icon {
   opacity: 0;
 }
 
 .resume-btn:link,
-.resume-btn:visited {
+.resume-btn:visited
+.projects-btn:link,
+.projects-btn:visited {
   color: #EEECEC;
   text-decoration: none;
 }
 
 .resume-btn:hover,
-.resume-btn:active {
+.resume-btn:active
+.projects-btn:hover,
+.projects-btn:active {
   background: rgba(208,208,208,0.5);
 }
 
-.resume-btn:hover .resume-icon {
+.resume-btn:hover .resume-icon
+.projects-btn:hover .projects-icon {
   opacity: 1;
 }
 
-.content .projects-content,
 .content .contact-content {
   padding: 5px;
   background: rgba(85,50,50,0.7);
   text-transform: none;
   font-size: 15px;
-}
-
-.content .projects-content {
-    text-align: left;
 }
 
 .contact-content .email,
